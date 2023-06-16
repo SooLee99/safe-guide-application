@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:opencv="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_guide"
+        android:orientation="vertical"
+        android:elevation="20dp">
+
+        <org.opencv.android.JavaCameraView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/frame_Surface" />
+
+        <TextView
+            android:id="@+id/tvRouteGuide"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:text="길 안내 텍스트 입니다."
+            android:textSize="50px"
+            android:textAlignment="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTmap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</LinearLayout>
